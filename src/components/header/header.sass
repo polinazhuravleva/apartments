@@ -1,0 +1,45 @@
+@import "../general_css/variables"
+
+.header
+  height: 126px
+  width: 100%
+  font-family: 'OpenSansRegular', sans-serif
+  color: $white
+  background-color: $darkgreen
+  &__container
+    display: flex
+    margin: 0 8.3% 0 5.55%
+    height: 100%
+  &__logo
+    margin-top: 21px
+  &__navigation
+    margin-top: 46px
+    margin-left: 6.15%
+  &__list
+    display: inline-block
+    margin: 0 22px
+    list-style-type: none
+  &__list:nth-child(3n)
+    margin-left: 18px
+  &__list:nth-child(4n),
+  &__list:nth-child(5n)
+    margin-left: 20px
+  &__list:nth-child(6n)
+    margin-left: 21px
+    margin-right: 26px
+  &__link
+    font-size: 24px
+    text-decoration: none
+    color: $white
+  &__phonebox
+    position: relative
+    left: 63px
+    margin-top: 33px
+    margin-left: 10%
+    width: 220px
+  &__phonenumber
+    font-size: 32px
+    line-height: 38px
+  &__phonetext
+    font-size: 20px
+
