@@ -1,0 +1,65 @@
+@import "../../general_css/variables"
+
+.form
+  display: flex
+  &__inputcontainer
+    display: flex
+    flex-direction: column
+  &__email
+    margin-bottom: 13px
+    padding: 0 20px
+    width: 319px
+    height: 47px
+    border-radius: 2px
+    background-color: #ffffff
+    border: none
+    outline: none
+    transition: box-shadow 0.2s
+    &::placeholder
+      font-family: 'OpenSansRegular', sans-serif
+      font-size: 18px
+      color: $blue
+    &:focus:not(.form__email_error)
+      box-shadow: 0 0 5px $white
+    &::-ms-clear
+      display: none
+    &_error
+      box-shadow: 0 0 11px 3px $red
+      border: 1px solid $red
+  &__label
+    display: flex
+    align-items: center
+    cursor: pointer
+    color: #ffffff
+    font-family: 'OpenSansRegular', sans-serif
+    font-size: 18px
+  &__checkbox
+    display: none
+    &:checked + .form__customcheckbox
+      background-image: url("img/Shape.png")
+      background-repeat: no-repeat
+      background-position: center center
+      box-shadow: 0 0 5px $white
+  &__customcheckbox
+    display: inline-block
+    margin: 3px 10px 0 0
+    width: 18px
+    height: 18px
+    border-radius: 2px
+    background-color: #ffffff
+    transition: box-shadow 0.1s ease
+  &__submitcontainer
+    margin-left: 54px
+  &__submit
+    width: 214px
+    height: 47px
+    border: none
+    border-radius: 2px
+    background-color: #a7a37e
+    outline: none
+    font-family: 'OpenSansRegular', sans-serif
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 0.96px
+    color: #ffffff
+    cursor: pointer
