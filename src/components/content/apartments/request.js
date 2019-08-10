@@ -13,12 +13,3 @@ $.ajax({
         console.log(errorObj);
     }
 });
-
-/*
-fetch('apt_data/apartments.json')
-    .then(response => response.json())
-    .then(data => {
-        const apartmentCard = new ApartmentBox(data);
-        apartmentCard.render();
-    });
-*/

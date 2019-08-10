@@ -1,5 +1,4 @@
-//import './apartments.json'
-//require('jquery');
+import './apartments.json'
 
 export class ApartmentBox {
     constructor(apartmentDetails) {
