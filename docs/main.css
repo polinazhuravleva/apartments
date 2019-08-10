@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url(fonts/OpenSans-Regular.ttf) format("truetype"), url(fonts/OpenSans.woff) format("woff"), url(fonts/OpenSans.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url(fonts/OpenSans-SemiBold.ttf) format("truetype"), url(fonts/OpenSans-Semibold.woff) format("woff"), url(fonts/OpenSans-Semibold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url(fonts/OpenSans-Bold.ttf) format("truetype"), url(fonts/OpenSans-Bold.woff) format("woff"), url(fonts/OpenSans-Bold.woff2) format("woff2"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+.content {
+  flex-grow: 1; }
+
+.footer {
+  flex-shrink: 0; }
+
+
+.slide-wrapper {
+  display: none;
+  position: fixed;
+  right: 5.55%;
+  bottom: 90px;
+  width: 80px;
+  height: 80px;
+  background: url(images/up.png) no-repeat center center;
+  cursor: pointer;
+  transition: transform 0.7s; }
+  .slide-wrapper:hover {
+    transform: scale(1.1); }
+
+.header {
+  height: 126px;
+  width: 100%;
+  font-family: 'OpenSansRegular', sans-serif;
+  color: #fefefe;
+  background-color: #002f2f; }
+  .header__container {
+    display: flex;
+    margin: 0 8.3% 0 5.55%;
+    height: 100%; }
+  .header__logo {
+    margin-top: 21px; }
+  .header__navigation {
+    margin-top: 46px;
+    margin-left: 6.15%; }
+  .header__list {
+    display: inline-block;
+    margin: 0 22px;
+    list-style-type: none; }
+  .header__list:nth-child(3n) {
+    margin-left: 18px; }
+  .header__list:nth-child(4n), .header__list:nth-child(5n) {
+    margin-left: 20px; }
+  .header__list:nth-child(6n) {
+    margin-left: 21px;
+    margin-right: 26px; }
+  .header__link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fefefe; }
+  .header__phonebox {
+    position: relative;
+    left: 63px;
+    margin-top: 33px;
+    margin-left: 10%;
+    width: 220px; }
+  .header__phonenumber {
+    font-size: 32px;
+    line-height: 38px; }
+  .header__phonetext {
+    font-size: 20px; }
+
+.apartments {
+  height: 100%;
+  background-color: #efecca; }
+  .apartments__container {
+    margin: 0 auto;
+    max-width: 1280px; }
+  .apartments__heading {
+    padding: 57px 0 61px 106px;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 48px;
+    color: #002f2f; }
+  .apartments__wrapper {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .apartments__inner-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1120px; }
+
+.apartment-box {
+  margin-bottom: 53px;
+  width: 320px;
+  height: 522px;
+  border-radius: 3px;
+  border: 1px solid;
+  cursor: default; }
+  .apartment-box_reserved {
+    border-color: #a7a37e; }
+  .apartment-box_free {
+    border-color: #002f2f; }
+  .apartment-box_sold {
+    border-color: #a1a1a1; }
+  .apartment-box__selected-wrapper {
+    position: relative; }
+  .apartment-box__star {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    cursor: pointer; }
+  .apartment-box__offer {
+    display: flex;
+    position: relative;
+    top: 18px;
+    font-family: "OpenSansSemibold", sans-serif;
+    font-size: 12px;
+    color: #ffffff; }
+  .apartment-box__discount, .apartment-box__super {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #ff4444; }
+  .apartment-box__discount {
+    left: 19px;
+    width: 33px; }
+  .apartment-box__super {
+    left: 72px;
+    width: 75px;
+    text-transform: uppercase; }
+  .apartment-box__content {
+    margin: 0 51px;
+    height: 486px; }
+  .apartment-box__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 281px; }
+  .apartment-box__type {
+    height: 60px;
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #002f2f; }
+  .apartment-box__details {
+    display: flex;
+    margin-top: 19px;
+    font-family: "OpenSansRegular", sans-serif; }
+  .apartment-box__facing-text {
+    display: flex;
+    width: 90px;
+    font-size: 16px;
+    color: #046380;
+    line-height: 18px; }
+    .apartment-box__facing-text::before {
+      display: block;
+      position: relative;
+      top: 3px;
+      margin-right: 8px;
+      width: 3px;
+      height: 33px;
+      border-radius: 2px;
+      content: '';
+      background-color: #046380; }
+  .apartment-box__area {
+    margin-left: 4px; }
+  .apartment-box__area-current, .apartment-box__floor-text {
+    font-size: 18px;
+    line-height: 18px; }
+  .apartment-box__area-type, .apartment-box__floor-type {
+    font-size: 13px; }
+  .apartment-box__floor {
+    margin-left: 14px; }
+  .apartment-box__price {
+    margin-top: 35px; }
+  .apartment-box__price-sum {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: 24px;
+    color: #313639; }
+  .apartment-box__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 100%;
+    font-family: 'OpenSansSemibold', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    color: #ffffff; }
+    .apartment-box__status_reserved {
+      background-color: #a7a37e; }
+    .apartment-box__status_free {
+      background-color: #002f2f; }
+    .apartment-box__status_sold {
+      background-color: #a1a1a1; }
+
+/* pixel-perfect img */
+.apartment-box:nth-child(1) .apartment-box__image {
+  margin-top: 5px; }
+
+.apartment-box:nth-child(2) .apartment-box__image {
+  margin-top: 8px; }
+
+.apartment-box:nth-child(3) .apartment-box__image {
+  margin-top: -7px; }
+
+.apartment-box:nth-child(4) .apartment-box__image {
+  margin-top: -12px; }
+
+.apartment-box:nth-child(5) .apartment-box__image {
+  margin-top: 17px;
+  margin-left: -7px; }
+
+.apartment-box:nth-child(6) .apartment-box__image {
+  margin-top: 2px;
+  margin-left: -4px; }
+
+.apartment-box:nth-child(7) .apartment-box__image {
+  margin-top: 10px;
+  margin-left: -23px; }
+
+.apartment-box:nth-child(8) .apartment-box__image {
+  margin-top: 15px;
+  margin-left: 2px; }
+
+.apartment-box:nth-child(9) .apartment-box__image {
+  margin-top: 44px;
+  margin-left: -2px; }
+
+.apartment-box:nth-child(10) .apartment-box__image {
+  margin-top: 19px; }
+
+.apartment-box:nth-child(11) .apartment-box__image {
+  margin-top: 18px;
+  margin-left: 3px; }
+
+.apartment-box:nth-child(12) .apartment-box__image {
+  position: relative;
+  top: 6px; }
+
+.footer {
+  background-color: #efecca; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 90px auto;
+    max-width: 1279px;
+    min-height: 197px;
+    border-radius: 3px;
+    background-color: #046380; }
+  .footer__left {
+    margin: 44px 0 0 4%; }
+  .footer__heading {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: 34px;
+    color: #ffffff; }
+  .footer__text {
+    margin-top: 5px;
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 18px;
+    color: #ffffff; }
+  .footer__right {
+    margin: 64px 8.3% 0 50px; }
+
+.form {
+  display: flex; }
+  .form__inputcontainer {
+    display: flex;
+    flex-direction: column; }
+  .form__email {
+    margin-bottom: 13px;
+    padding: 0 20px;
+    width: 319px;
+    height: 47px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.2s; }
+    .form__email::-webkit-input-placeholder {
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 18px;
+      color: #046380; }
+    .form__email::-moz-placeholder {
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 18px;
+      color: #046380; }
+    .form__email:-ms-input-placeholder {
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 18px;
+      color: #046380; }
+    .form__email::-ms-input-placeholder {
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 18px;
+      color: #046380; }
+    .form__email::placeholder {
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 18px;
+      color: #046380; }
+    .form__email:focus:not(.form__email_error) {
+      box-shadow: 0 0 5px #fefefe; }
+    .form__email::-ms-clear {
+      display: none; }
+    .form__email_error {
+      box-shadow: 0 0 11px 3px #ff4444;
+      border: 1px solid #ff4444; }
+  .form__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 18px; }
+  .form__checkbox {
+    display: none; }
+    .form__checkbox:checked + .form__customcheckbox {
+      background-image: url(images/Shape.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow: 0 0 5px #fefefe; }
+  .form__customcheckbox {
+    display: inline-block;
+    margin: 3px 10px 0 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transition: box-shadow 0.1s ease; }
+  .form__submitcontainer {
+    margin-left: 54px; }
+  .form__submit {
+    width: 214px;
+    height: 47px;
+    border: none;
+    border-radius: 2px;
+    background-color: #a7a37e;
+    outline: none;
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    color: #ffffff;
+    cursor: pointer; }
+
+@media screen and (max-width: 1600px) {
+  .header__list:nth-child(n) {
+    margin: 0 15px; }
+  .header__link {
+    font-size: 20px; }
+  .header__phonebox {
+    left: 0; }
+  .header__phonenumber {
+    font-size: 28px; }
+  .header__phonetext {
+    font-size: 16px; } }
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    align-items: center;
+    margin: 0 3% 0 3%; }
+  .header__logo {
+    margin-top: 0; }
+  .header__logo-image {
+    width: 26px;
+    height: 64px; }
+  .header__navigation {
+    margin: 5px 5% 0 5%;
+    text-align: justify; }
+  .header__list:nth-child(n) {
+    margin: 4px 10px; }
+  .header__link {
+    font-size: 14px; }
+  .header__phonebox {
+    margin: 0;
+    width: auto; }
+  .header__phonenumber {
+    font-size: 22px; }
+  .header__phonetext {
+    font-size: 12px; }
+  .footer__container {
+    flex-direction: column;
+    align-items: center; }
+  .footer__heading {
+    text-align: center; }
+  .footer__right {
+    margin-bottom: 44px;
+    margin-left: 0;
+    margin-right: 0; } }
+
