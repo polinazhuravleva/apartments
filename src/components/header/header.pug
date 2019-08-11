@@ -2,11 +2,11 @@ header.header
     .header__container
         .header__logo
             a(href='index.html')
-                img.header__logo-image(src=require("./img/logo.png"))
+                img.header__logo-image(src=require("./img/logo.png"), alt='image')
         nav.header__navigation
             ul.header__menu
                 li.header__list
-                    a(href='#').header__link Объекты
+                    a(href='#objects').header__link Объекты
                 li.header__list
                     a(href='#').header__link Компания
                 li.header__list
@@ -18,9 +18,7 @@ header.header
                 li.header__list
                     a(href='#').header__link Акции
                 li.header__list
-                    a(href='#').header__link Контакты
+                    a(href='#contacts').header__link Контакты
         .header__phonebox
             p.header__phonenumber 8&nbsp;888&nbsp;88&nbsp;88&nbsp;98
             p.header__phonetext Звони скорее!
-
-
