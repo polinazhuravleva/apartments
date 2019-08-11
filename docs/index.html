@@ -11,16 +11,16 @@
       <div class="content">
 <header class="header">
   <div class="header__container">
-    <div class="header__logo"><a href="index.html"><img class="header__logo-image" src="images/logo.png"></a></div>
+    <div class="header__logo"><a href="index.html"><img class="header__logo-image" src="images/logo.png" alt="image"></a></div>
     <nav class="header__navigation">
       <ul class="header__menu">
-        <li class="header__list"><a class="header__link" href="#">Объекты</a></li>
+        <li class="header__list"><a class="header__link" href="#objects">Объекты</a></li>
         <li class="header__list"><a class="header__link" href="#">Компания</a></li>
         <li class="header__list"><a class="header__link" href="#">Как купить</a></li>
         <li class="header__list"><a class="header__link" href="#">Агентам</a></li>
         <li class="header__list"><a class="header__link" href="#">Регионам</a></li>
         <li class="header__list"><a class="header__link" href="#">Акции</a></li>
-        <li class="header__list"><a class="header__link" href="#">Контакты</a></li>
+        <li class="header__list"><a class="header__link" href="#contacts">Контакты</a></li>
       </ul>
     </nav>
     <div class="header__phonebox">
@@ -32,7 +32,11 @@
 <section class="apartments">
   <div class="apartments__container">
     <h1 class="apartments__heading">Найдено 666 квартир</h1>
-    <div class="apartments__wrapper">
+    <div class="apartments__wrapper" id="objects">
+      <div class="apartments__sort">Сортировать по:
+        <button class="apartments__price-sort descend"><span class="apartments__text target">Цене</span><span class="apartments__button-circle"></span></button>
+        <button class="apartments__rooms-sort descend"><span class="apartments__text">Комнатам</span><span class="apartments__button-circle"></span></button>
+      </div>
       <div class="apartments__inner-wrapper"></div>
       <div class="apartments__button-wrapper">
         <button class="apartments__button"></button>
@@ -42,7 +46,7 @@
 </section>
       </div>
 <footer class="footer">
-  <div class="footer__container">
+  <div class="footer__container" id="contacts">
     <div class="footer__left">
       <h5 class="footer__heading">Успей купить!</h5>
       <p class="footer__text">Подпишись и&nbsp;успей словить все акции</p>
@@ -63,5 +67,5 @@
   </div>
 </footer>
     </div>
-  <script type="text/javascript" src="main.js"></script></body>
+  <script src="main.js"></script></body>
 </html>

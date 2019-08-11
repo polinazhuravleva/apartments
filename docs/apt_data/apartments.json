@@ -12,6 +12,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -28,6 +29,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1666666,
     "currency": "руб."
   },
@@ -44,6 +46,7 @@
     "apartmentFloor": 7,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5900000,
     "currency": "руб."
   },
@@ -60,6 +63,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 12900000,
     "currency": "руб."
   },
@@ -80,6 +84,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -98,6 +103,7 @@
     "apartmentFloor": 14,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 4,
     "price": 23900000,
     "currency": "руб."
   },
@@ -114,6 +120,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 5666666,
     "currency": "руб."
   },
@@ -130,6 +137,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 5696664,
     "currency": "руб."
   },
@@ -150,6 +158,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1200000,
     "currency": "руб."
   },
@@ -168,6 +177,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1500500,
     "currency": "руб."
   },
@@ -184,6 +194,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -202,6 +213,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -218,6 +230,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1666666,
     "currency": "руб."
   },
@@ -234,6 +247,7 @@
     "apartmentFloor": 7,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5900000,
     "currency": "руб."
   },
@@ -252,6 +266,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -270,6 +285,7 @@
     "apartmentFloor": 14,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 4,
     "price": 23900000,
     "currency": "руб."
   },
@@ -286,6 +302,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -302,6 +319,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -322,6 +340,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -338,6 +357,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 12900000,
     "currency": "руб."
   },
@@ -354,6 +374,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -372,6 +393,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -388,6 +410,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -404,6 +427,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1666666,
     "currency": "руб."
   },
@@ -420,6 +444,7 @@
     "apartmentFloor": 7,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5900000,
     "currency": "руб."
   },
@@ -436,6 +461,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 12900000,
     "currency": "руб."
   },
@@ -452,6 +478,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -470,6 +497,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -486,6 +514,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1666666,
     "currency": "руб."
   },
@@ -502,6 +531,7 @@
     "apartmentFloor": 7,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5900000,
     "currency": "руб."
   },
@@ -520,6 +550,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -536,6 +567,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 12900000,
     "currency": "руб."
   },
@@ -552,6 +584,7 @@
     "apartmentFloor": 7,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5900000,
     "currency": "руб."
   },
@@ -568,6 +601,7 @@
     "apartmentFloor": 1,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 3,
     "price": 12900000,
     "currency": "руб."
   },
@@ -584,6 +618,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -602,6 +637,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -618,6 +654,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 6200000,
     "currency": "руб."
   },
@@ -636,6 +673,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -654,6 +692,7 @@
     "apartmentFloor": 3,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 2,
     "price": 5255006,
     "currency": "руб."
   },
@@ -672,6 +711,7 @@
     "apartmentFloor": 14,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 4,
     "price": 23900000,
     "currency": "руб."
   },
@@ -688,6 +728,7 @@
     "apartmentFloor": 12,
     "totalFloorCount": 14,
     "floorType": "этаж",
+    "roomCount": 0,
     "price": 1900000,
     "currency": "руб."
   },
@@ -704,6 +745,7 @@
     "apartmentFloor": 6,
     "totalFloorCount": 6,
     "floorType": "этаж",
+    "roomCount": 1,
     "price": 1666666,
     "currency": "руб."
   }
