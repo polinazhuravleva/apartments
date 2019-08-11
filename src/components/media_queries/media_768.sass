@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px)
+  .slide-wrapper
+    width: 60px
+    height: 60px
+
+  .header
+    height: 190px
+    &__container
+      flex-wrap: wrap
+      justify-content: center
+      margin: auto 2% auto 2%
+    &__logo
+      order: 1
+      margin-right: 15%
+    &__navigation
+      order: 2
+    &__menu
+      justify-content: center
+      margin: 0
+    &__list:nth-child(n)
+      margin: 5px
+    &__list:last-child
+      margin-right: 0
+    &__phonebox
+      order: 1
+
+  .apartments
+    &__heading
+      padding-left: 0
+      font-size: 40px
+      text-align: center
+    &__sort
+      margin-left: 0
+      justify-content: center
+    &__inner-wrapper
+      padding: 0 4%
+
+  .apartment-box
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0
+    &__type
+      text-align: center
+
+  .form
+    flex-direction: column
+    &__submitcontainer
+      margin-left: 0
+      margin-top: 30px
+    &__submit
+      width: 100%
