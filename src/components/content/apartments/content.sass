@@ -7,10 +7,51 @@
     margin: 0 auto
     max-width: 1280px
   &__heading
-    padding: 57px 0 61px 106px
+    padding: 56px 0 61px 106px
     font-family: 'OpenSansBold', sans-serif
     font-size: 48px
     color: $darkgreen
+  &__sort
+    display: flex
+    align-items: baseline
+    margin: 0 0 44px 104px
+    padding-top: 24px
+    font-family: "OpenSansRegular", sans-serif
+    font-size: 14px
+    color: rgba(0, 47, 47, 0.7)
+  &__price-sort,
+  &__rooms-sort
+    display: flex
+    border: none
+    outline: none
+    color: rgba(0, 47, 47, 0.7)
+    letter-spacing: 0.7px
+    background-color: transparent
+    cursor: pointer
+    &:focus .apartments__text
+      margin-bottom: -2px
+      padding-bottom: 4px
+      border-bottom: 1px
+      border-bottom-style: dotted
+      color: #002f2f
+      border-color: rgba(80, 115, 146, 0.7)
+  &__price-sort
+    margin-left: 12px
+  &__rooms-sort
+    margin-left: 18px
+  &__button-circle
+    margin-left: 8px
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background-color: rgba(4, 99, 128, 0.07)
+    background-image: url("img/arrow.png")
+    background-repeat: no-repeat
+    background-position: center center
+    &_rotate
+      transform: rotate(180deg)
+  &__rooms-sort &__button-circle
+    margin-left: 10px
   &__wrapper
     margin-bottom: 71px
     width: 100%
@@ -24,11 +65,13 @@
     max-width: 1120px
   &__button-wrapper
     display: flex
-    align-items: center
     justify-content: center
-    margin-bottom: 74px
+    margin-top: 2px
+    padding-bottom: 74px
   &__button
-    width: 533px
+    padding-left: 12px
+    max-width: 533px
+    width: 100%
     height: 72px
     border-radius: 3px
     border: none
@@ -40,11 +83,17 @@
     background-color: $blue
     color: #ffffff
     cursor: pointer
+    transition: transform 0.5s
+    &:hover
+      transform: scaleX(1.02)
+    &:active
+      box-shadow: 0 0 2px 1px $blue
 
 
 .apartment-box
   margin-bottom: 53px
-  width: 320px
+  max-width: 320px
+  width: 100%
   height: 522px
   border-radius: 3px
   border: 1px solid
@@ -65,7 +114,7 @@
   &__offer
     display: flex
     position: relative
-    top: 18px
+    top: 17px
     font-family: "OpenSansSemibold", sans-serif
     font-size: 12px
     color: #ffffff
@@ -142,6 +191,8 @@
     justify-content: center
     height: 36px
     width: 100%
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
     font-family: 'OpenSansSemibold', sans-serif
     text-transform: uppercase
     font-size: 12px
@@ -158,55 +209,57 @@
 /* pixel-perfect img */
 .apartment-box:nth-child(1)
   .apartment-box__image
-    margin-top: 5px
+    margin-top: 4px
+    margin-left: -3px
 
 .apartment-box:nth-child(2)
   .apartment-box__image
-    margin-top: 8px
+    margin-top: 6px
+    margin-left: -2px
 
 .apartment-box:nth-child(3)
   .apartment-box__image
-    margin-top: -7px
+    margin-top: -8px
+    margin-left: 3px
 
 .apartment-box:nth-child(4)
   .apartment-box__image
-    margin-top: -12px
+    margin-top: -14px
+    margin-left: 2px
 
 .apartment-box:nth-child(5)
   .apartment-box__image
-    margin-top: 17px
+    margin-top: 15px
     margin-left: -7px
 
 .apartment-box:nth-child(6)
   .apartment-box__image
-    margin-top: 2px
     margin-left: -4px
 
 .apartment-box:nth-child(7)
   .apartment-box__image
-    margin-top: 10px
+    margin-top: 9px
     margin-left: -23px
 
 .apartment-box:nth-child(8)
   .apartment-box__image
-    margin-top: 15px
+    margin-top: 13px
     margin-left: 2px
 
 .apartment-box:nth-child(9)
   .apartment-box__image
-    margin-top: 44px
+    margin-top: 42px
     margin-left: -2px
 
 .apartment-box:nth-child(10)
   .apartment-box__image
-    margin-top: 19px
+    margin-top: 16px
 
 .apartment-box:nth-child(11)
   .apartment-box__image
-    margin-top: 18px
-    margin-left: 3px
+    margin-top: 16px
+    margin-left: 4px
 
 .apartment-box:nth-child(12)
   .apartment-box__image
-    position: relative
-    top: 6px
+    margin-top: 11px

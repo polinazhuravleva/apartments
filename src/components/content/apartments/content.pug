@@ -1,7 +1,15 @@
 section.apartments
     .apartments__container
         h1.apartments__heading Найдено 666 квартир
-        .apartments__wrapper
+        .apartments__wrapper#objects
+            .apartments__sort
+                | Сортировать по:
+                button.apartments__price-sort.descend
+                    span.apartments__text.target Цене
+                    span.apartments__button-circle
+                button.apartments__rooms-sort.descend
+                    span.apartments__text Комнатам
+                    span.apartments__button-circle
             .apartments__inner-wrapper
             .apartments__button-wrapper
                 button.apartments__button
